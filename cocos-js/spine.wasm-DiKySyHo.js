@@ -1,4 +1,4 @@
-System.register(['./_virtual_cc-CWlfBD5S.js'], (function (exports) {
+System.register(['./virtual_cc-CWlfBD5S.js'], (function (exports) {
   'use strict';
   var _createForOfIteratorHelperLoose;
   return {
@@ -232,7 +232,7 @@ System.register(['./_virtual_cc-CWlfBD5S.js'], (function (exports) {
             M(a.F.I.G.name + " instance already deleted");
           }
           var La = false;
-          function Ma() {}
+          function Ma() { }
           function Na(a) {
             --a.count.value;
             0 === a.count.value && (a.L ? a.M.S(a.L) : a.I.G.S(a.H));
@@ -289,7 +289,7 @@ System.register(['./_virtual_cc-CWlfBD5S.js'], (function (exports) {
             };
             return S(a);
           }
-          function T() {}
+          function T() { }
           function Ta(a, b, c) {
             if (undefined === a[b].K) {
               var d = a[b];
@@ -347,7 +347,7 @@ System.register(['./_virtual_cc-CWlfBD5S.js'], (function (exports) {
                 c = b.F.L;
                 break;
               case 2:
-                if (b.F.M === this) c = b.F.L;else {
+                if (b.F.M === this) c = b.F.L; else {
                   var d = b.clone();
                   c = this.na(c, U(function () {
                     d["delete"]();
@@ -449,7 +449,7 @@ System.register(['./_virtual_cc-CWlfBD5S.js'], (function (exports) {
               }
               for (var t = 0; t < n; ++t) m[t] = b[t + 2].toWireType(r, arguments[t]), q.push(m[t]);
               t = d.apply(null, q);
-              if (g) gb(r);else for (var w = k ? 1 : 2; w < b.length; w++) {
+              if (g) gb(r); else for (var w = k ? 1 : 2; w < b.length; w++) {
                 var E = 1 === w ? u : m[w - 2];
                 null !== b[w].O && b[w].O(E);
               }
@@ -490,9 +490,9 @@ System.register(['./_virtual_cc-CWlfBD5S.js'], (function (exports) {
             a >= Z.ba && 0 === --Z.get(a).oa && Z.fa(a);
           }
           var mb = function mb(a) {
-              a || M("Cannot use deleted val. handle = " + a);
-              return Z.get(a).value;
-            },
+            a || M("Cannot use deleted val. handle = " + a);
+            return Z.get(a).value;
+          },
             U = function U(a) {
               switch (a) {
                 case undefined:
@@ -563,7 +563,7 @@ System.register(['./_virtual_cc-CWlfBD5S.js'], (function (exports) {
               var e = c[a++];
               if (e & 128) {
                 var h = c[a++] & 63;
-                if (192 == (e & 224)) d += String.fromCharCode((e & 31) << 6 | h);else {
+                if (192 == (e & 224)) d += String.fromCharCode((e & 31) << 6 | h); else {
                   var k = c[a++] & 63;
                   e = 224 == (e & 240) ? (e & 15) << 12 | h << 6 | k : (e & 7) << 18 | h << 12 | k << 6 | c[a++] & 63;
                   65536 > e ? d += String.fromCharCode(e) : (e -= 65536, d += String.fromCharCode(55296 | e >> 10, 56320 | e & 1023));
@@ -731,7 +731,7 @@ System.register(['./_virtual_cc-CWlfBD5S.js'], (function (exports) {
             return a;
           };
           var yb = {
-            q: function q() {},
+            q: function q() { },
             t: function t(a, b, c, d, e) {
               var h = Ca(c);
               b = H(b);
@@ -745,7 +745,7 @@ System.register(['./_virtual_cc-CWlfBD5S.js'], (function (exports) {
                 },
                 argPackAdvance: 8,
                 readValueFromPointer: function readValueFromPointer(k) {
-                  if (1 === c) var g = ha;else if (2 === c) g = ia;else if (4 === c) g = B;else throw new TypeError("Unknown boolean type size: " + b);
+                  if (1 === c) var g = ha; else if (2 === c) g = ia; else if (4 === c) g = B; else throw new TypeError("Unknown boolean type size: " + b);
                   return this.fromWireType(g[k >> h]);
                 },
                 O: null
@@ -1017,7 +1017,7 @@ System.register(['./_virtual_cc-CWlfBD5S.js'], (function (exports) {
                     var l = h + g;
                     if (g == e || 0 == A[l]) {
                       k = k ? za(k, l - k) : "";
-                      if (undefined === n) var n = k;else n += String.fromCharCode(0), n += k;
+                      if (undefined === n) var n = k; else n += String.fromCharCode(0), n += k;
                       k = l + 1;
                     }
                   } else {
@@ -1074,7 +1074,7 @@ System.register(['./_virtual_cc-CWlfBD5S.js'], (function (exports) {
                       }
                       h[k] = 0;
                     }
-                  } else if (k) for (k = 0; k < h; ++k) n = e.charCodeAt(k), 255 < n && (X(l), M("String has UTF-16 code units that do not fit in 8 bits")), A[l + k] = n;else for (k = 0; k < h; ++k) A[l + k] = e[k];
+                  } else if (k) for (k = 0; k < h; ++k) n = e.charCodeAt(k), 255 < n && (X(l), M("String has UTF-16 code units that do not fit in 8 bits")), A[l + k] = n; else for (k = 0; k < h; ++k) A[l + k] = e[k];
                   null !== d && d.push(X, g);
                   return g;
                 },
@@ -1091,8 +1091,8 @@ System.register(['./_virtual_cc-CWlfBD5S.js'], (function (exports) {
                 ra: true,
                 name: b,
                 argPackAdvance: 0,
-                fromWireType: function fromWireType() {},
-                toWireType: function toWireType() {}
+                fromWireType: function fromWireType() { },
+                toWireType: function toWireType() { }
               });
             },
             j: function j(a, b, c) {
@@ -1148,7 +1148,7 @@ System.register(['./_virtual_cc-CWlfBD5S.js'], (function (exports) {
                     ma();
                     var h = 1;
                     break a;
-                  } catch (k) {}
+                  } catch (k) { }
                   h = undefined;
                 }
                 if (h) return true;
